@@ -20,6 +20,8 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            color: black;
         }
 
         h3 {
@@ -44,6 +46,11 @@
             text-indent: 40px;
         }
 
+        sub,
+        sup {
+            color: lightcoral;
+        }
+
         footer {
             background-color: brown;
             color: white;
@@ -63,6 +70,16 @@
         }
 
         /* Class Selector */
+        .main-paragraph {
+            color: rgb(212, 255, 0);
+            font-weight: bold;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        .main-word {
+            font-size: 20px;
+            font-family: fantasy;
+        }
     </style>
 </head>
 
@@ -116,20 +133,36 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt fugit aliquam vel magnam sequi nesciunt
             nam necessitatibus ea veritatis harum.
         </p>
-        <h3>Other tags</h3>
-        <p>
-            H<sub>2</sub>O
-            <br>
-            5<sup>2</sup> = 25
-            <br>
-            <var>a</var> + <var>b</var> = <var>c</var>
-            <br>
-            <kbd>Ctrl+/</kbd> comment/uncomment
-            <br>
-            <samp>2 + 2 * 2 = 6</samp>
-        </p>
-
     </article>
+
+    <h3>Other tags</h3>
+    <p>
+        H<sub>2</sub>O
+        <br>
+        5<sup>2</sup> = 25
+        <br>
+        <var>a</var> + <var>b</var> = <var>c</var>
+        <br>
+        <kbd>Ctrl+/</kbd> comment/uncomment
+        <br>
+        <samp>2 + 2 * 2 = 6</samp>
+    </p>
+
+    <p class="main-paragraph">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, aut nostrum itaque cumque odit tenetur aliquid,
+        vero ut, omnis soluta voluptas sed tempore. Quia cupiditate ad, accusamus porro eos temporibus!
+    </p>
+    <p>
+        <span class="main-word">Lorem</span>, ipsum dolor sit amet consectetur adipisicing elit. <span
+            class="main-word">Nulla</span>, aut nostrum itaque cumque odit tenetur aliquid,
+        vero ut, omnis soluta voluptas sed tempore. <span class="main-word">Quia</span> cupiditate ad, accusamus porro
+        eos temporibus!
+    </p>
+    <p class="main-paragraph">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, aut nostrum itaque cumque odit tenetur aliquid,
+        vero ut, omnis soluta voluptas sed tempore. Quia cupiditate ad, accusamus porro eos temporibus!
+    </p>
+
 
     <footer>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, eveniet, aut sunt
