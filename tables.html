@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            width: 90%;
+            margin: 8px auto;
+        }
+
+        table {
+            background-color: lightgray;
+            width: 100%;
+            /* border-spacing: 10px; */
+            border-collapse: collapse;
+            /* caption-side: bottom; */
+        }
+
+        caption {
+            text-align: right;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: rgb(79, 79, 79);
+        }
+
+        td,
+        th {
+            padding: 18px 12px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        thead,
+        tfoot {
+            text-transform: uppercase;
+        }
+
+        thead {
+            border-bottom: 1px solid white;
+        }
+
+        tfoot {
+            border-top: 1px solid white;
+        }
+
+        .col-1 {
+            background-color: lightgray;
+            width: auto;
+        }
+
+        .col-2 {
+            background-color: aquamarine;
+            width: 17%;
+        }
+
+        .col-3 {
+            background-color: yellowgreen;
+            width: 17%;
+        }
+
+        .col-4 {
+            background-color: rgb(174, 174, 89);
+            width: 17%;
+        }
+
+        .col-5 {
+            background-color: brown;
+            width: 17%;
+        }
+
+        /* first column styling */
+        td:first-child {
+            text-align: left;
+            font-weight: normal;
+        }
+
+        th:first-child,
+        td:first-child {
+            color: rgb(79, 79, 79);
+        }
+
+        /* white circle */
+        td span {
+            border: 2px solid white;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- tr - table row -->
+    <!-- td - table data -->
+    <!-- th - table header -->
+    <table>
+        <caption>Title table</caption>
+
+        <colgroup>
+            <col class="col-1">
+            <col class="col-2">
+            <col class="col-3">
+            <col class="col-4">
+            <col class="col-5">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th>Specification</th>
+                <th>Free</th>
+                <th>Basic</th>
+                <th>Standart</th>
+                <th>Premium</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Price</th>
+                <th>0.00$</th>
+                <th>9.99$</th>
+                <th>19.99$</th>
+                <th>29.99$</th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <!-- emmet: (tr>(td>lorem3)+(td>{+})*4)*6 -->
+            <tr>
+                <td>Lorem, ipsum dolor.</td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+                <td><span>-</span></td>
+            </tr>
+            <tr>
+                <td>Recusandae, ducimus doloribus!</td>
+                <td><span>+</span></td>
+                <td><span>-</span></td>
+                <td><span>+</span></td>
+                <td><span>-</span></td>
+            </tr>
+            <tr>
+                <td>Quae, ratione quod.</td>
+                <td>+</td>
+                <td>+</td>
+                <td>+</td>
+                <td>+</td>
+            </tr>
+            <tr>
+                <td>Voluptates, ipsa ex.</td>
+                <td>-</td>
+                <td>+</td>
+                <td>-</td>
+                <td>+</td>
+            </tr>
+            <tr>
+                <td>Optio, illo ab?</td>
+                <td>+</td>
+                <td>-</td>
+                <td>+</td>
+                <td>+</td>
+            </tr>
+            <tr>
+                <td>Quas, iusto atque.</td>
+                <td>+</td>
+                <td>+</td>
+                <td>+</td>
+                <td>+</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
