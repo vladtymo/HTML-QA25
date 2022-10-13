@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Transform</title>
+  <style>
+    body {
+      background-color: white;
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      margin: 20px;
+      display: inline-block;
+      border: 3px solid black;
+      border-top-color: blue;
+      border-right-color: yellow;
+      border-bottom-color: red;
+
+      transition: transform 0.5s ease;
+    }
+
+    .translate:hover {
+      transform: translate(20px, -20px);
+    }
+
+    .scale:hover {
+      /* scale X and Y */
+      transform: scale(1.2);
+      /* transform: scale(1.4, 1.1); */
+    }
+
+    .rotate:hover {
+      transform: rotate(45deg);
+    }
+
+    .origin {
+      /* transform-origin: rigth, top; */
+      transform-origin: 100% 0%;
+    }
+
+    .skew:hover {
+      transform: skew(10deg, 5deg);
+    }
+
+    .matrix:hover {
+      /* matrix( scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY() ) */
+      transform: matrix(1.1, 1, -2, 1.1, 10, 10);
+    }
+  </style>
+</head>
+
+<body>
+  <h2>transform + transition</h2>
+  <div class="box translate"></div>
+  <div class="box scale"></div>
+  <div class="box rotate"></div>
+  <div class="box rotate origin"></div>
+  <div class="box skew"></div>
+  <div class="box matrix"></div>
+</body>
+
+</html>
